@@ -1,4 +1,8 @@
-// Updated the base URL to use environment variables
-const baseURL = process.env.REACT_APP_API_BASE_URL;
+import axios from 'axios';
 
-// Existing code continues below...
+const api = axios.create({
+    baseURL: process.env.REACT_APP_API_BASE_URL,
+    withCredentials: true,
+});
+
+export default api;
