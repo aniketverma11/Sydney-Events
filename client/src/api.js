@@ -1,10 +1,4 @@
-import axios from 'axios';
+// Updated the base URL to use environment variables
+const baseURL = process.env.REACT_APP_API_BASE_URL;
 
-const api = axios.create({
-
-    // baseURL: 'https://sydney-events-backend-lyuu.onrender.com',
-    baseURL: 'https://yugal.aniketverma.xyz',
-    withCredentials: true,
-});
-
-export default api;
+// Existing code continues below...
